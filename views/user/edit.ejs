@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+          <link rel="stylesheet" href="/public/css/styles.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+          <title>crear usuario</title>
+      </head>
+      <body>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="mt-4">Editar Usuario</h2>
+                <hr>
+                <form method="post" action="/modificar/<%= usuario.id %>" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" value="<%= usuario.nombre %>" id="nombre" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" value="<%= usuario.apellido %>" id="apellido" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="<%= usuario.email %>" id="email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="file" name="imagen" id="imagen" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Enviar">
+                    <a class="btn btn-primary" href="/">Regresar al inicio</a>
+                  </div>
+                  
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+          </body>
+</html>

@@ -1,0 +1,10 @@
+Desarrollo de la app/page: 
+
+1) Consigna: crear un CRUD de Users usando modelo MVC con la engine EJS 
+(que se pueda crear, editar, eliminar y listar users, y ver el detalle de cada uno).
+Los users tienen nombre, apellido, mail, pwd (encriptado) e imagen de perfil
+(A esos atributos le agregue el id para la db). 
+ El main debe mostrar una tabla con los usuarios existentes, y en cada registro boton para edit o delete
+ Y un boton para acceder a la creacion de nuevo user.
+ No se evaluan estilos, solo la logica. 
+
